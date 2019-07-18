@@ -25,16 +25,16 @@
 -- Be sure that ID and DESCRIPTION fields exist in
 -- BigInteger and String compatible fields respectively.
 
-CREATE TABLE ${changelog} (
+CREATE TABLE ${madhu} (
 ID NUMERIC(20,0) NOT NULL,
 APPLIED_AT VARCHAR(25) NOT NULL,
 DESCRIPTION VARCHAR(255) NOT NULL
 );
 
-ALTER TABLE ${changelog}
-ADD CONSTRAINT PK_${changelog}
+ALTER TABLE ${madhu}
+ADD CONSTRAINT PK_${madhu}
 PRIMARY KEY (id);
 
 -- //@UNDO
 
-DROP TABLE ${changelog};
+DROP TABLE ${madhu};
